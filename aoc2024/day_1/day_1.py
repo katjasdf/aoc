@@ -1,5 +1,3 @@
-import math
-
 lines = open('data.txt').readlines()
 
 table_1 = []
@@ -13,6 +11,7 @@ for line in lines:
 table_1.sort()
 table_2.sort()
 
+
 def first_part():
     response = 0
 
@@ -21,6 +20,7 @@ def first_part():
 
     print(response)
 
+
 def second_part():
     response = 0
 
@@ -28,6 +28,7 @@ def second_part():
         response += num * table_2.count(num)
 
     print(response)
+
 
 first_part()
 second_part()
