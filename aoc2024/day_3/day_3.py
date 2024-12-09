@@ -3,7 +3,7 @@ import re
 data = open('data.txt').read()
 
 
-def part_1():
+def first_part():
     mul = re.findall(r'mul\(\d{1,3},\d{1,3}\)', str(data))
     response = 0
 
@@ -14,7 +14,7 @@ def part_1():
     print(response)
 
 
-def part_2():
+def second_part():
     response = 0
     enabled = True
     stop = False
@@ -53,5 +53,5 @@ def part_2():
     print(response)
 
 
-part_1()
-part_2()
+first_part()
+second_part()
